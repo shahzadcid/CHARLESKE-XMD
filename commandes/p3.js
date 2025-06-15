@@ -3,7 +3,7 @@ const {
 } = require('../framework/zokou');
 const axios = require('axios');
 zokou({
-  nomCom: "pair2",
+  nomCom: "pair1",
   aliases: ["session", "code", "paircode", "qrcode"],
   reaction: '☘️',
   categorie: 'system'
