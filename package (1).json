@@ -1,5 +1,5 @@
 {
-  "name": "Bwmxmd",
+  "name": "Charleskexmd",
   "version": "2.1.0",
   "description": "Advanced WhatsApp bot using Baileys",
   "main": "index.js",
@@ -19,12 +19,12 @@
   "keywords": [
     "bot",
     "Baileys",
-    "bmwxmd",
-    "quantum",
+    "charleske",
+    "xmd",
     "whatsapp-bot",
-    "Ibrahim-Adams"
+    "Charles ke"
   ],
-  "author": "Ibrahim Adams",
+  "author": "charleske",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
