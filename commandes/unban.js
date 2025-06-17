@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { channelInfo } = require('../lib/messageConfig');
+const { channelInfo } = require('../bdd/messageConfig');
 
 async function unbanCommand(sock, chatId, message) {
     let userToUnban;
