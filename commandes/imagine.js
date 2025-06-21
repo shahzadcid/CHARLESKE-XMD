@@ -1,5 +1,4 @@
 const { zokou } = require('../framework/zokou');
-
 zokou({
   pattern: "fluxai",
   alias: ["flux", "imagine"],
