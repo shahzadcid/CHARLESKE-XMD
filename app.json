@@ -82,7 +82,7 @@
     },
   "HEROKU_APP_NAME": {
     "description": "insert your heroku APP NAME (put the name you put on top)",
-     "required" :true
+     "required" :false
     }  
 	  ,
     "SESSION_ID":
