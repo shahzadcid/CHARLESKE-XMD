@@ -78,7 +78,7 @@
 	,
     "HEROKU_API_KEY": {
     "description": "insert your heroku api-key (this is optionnal)",
-     "required" :true
+     "required" :false
     },
   "HEROKU_APP_NAME": {
     "description": "insert your heroku APP NAME (put the name you put on top)",
