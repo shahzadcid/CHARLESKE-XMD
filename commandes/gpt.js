@@ -51,7 +51,7 @@ zokou(
             title: "GPT - CHARLESKE XMD AI",
             body: "🤖 made by Charleske",
             mediaType: 1,
-            thumbnailUrl: "https://i.ibb.co/NymxRZH/ai-icon.png",
+            thumbnailUrl: "https://files.catbox.moe/sa3ahq.jpg",
             sourceUrl: "https://groq.com",
             renderLargerThumbnail: true
           },
