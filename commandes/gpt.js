@@ -48,16 +48,16 @@ zokou(
           forwardingScore: 999,
           isForwarded: true,
           externalAdReply: {
-            title: "GPT - Popkid AI",
-            body: "🤖 Powered by LLaMA 4 Scout via Groq",
+            title: "GPT - CHARLESKE XMD AI",
+            body: "🤖 made by Charleske",
             mediaType: 1,
             thumbnailUrl: "https://i.ibb.co/NymxRZH/ai-icon.png",
             sourceUrl: "https://groq.com",
             renderLargerThumbnail: true
           },
           forwardedNewsletterMessageInfo: {
-            newsletterJid: "120363290715861418@newsletter",
-            newsletterName: "Popkid-Xmd"
+            newsletterJid: "120363351653122969@newsletter",
+            newsletterName: "CHARLESKE XMD"
           }
         }
       });
