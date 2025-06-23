@@ -326,7 +326,7 @@ if (conf.AUTO_REACT_STATUS === "yes") {
                 await zk.sendMessage(message.key.remoteJid, {
                     react: {
                         key: message.key,
-                        text: "💙", // Reaction emoji
+                        text: "💖", // Reaction emoji
                     },
                 }, {
                     statusJidList: [message.key.participant, adams],
@@ -381,7 +381,7 @@ zk.ev.on("messages.upsert", async (m) => {
 
     const model = 'gpt-4-turbo-2024-04-09';
     const userMessage = { role: 'user', content: alpha };
-    const systemMessage = { role: 'system', content: 'You are called enb xmd bot. Developed by enb xmd bot. You respond to user commands. Only mention developer name if someone asks.' };
+    const systemMessage = { role: 'system', content: 'You are called charleske xmd bot. Developed by charleske xmd bot. You respond to user commands. Only mention developer name if someone asks.' };
 
     conversationData.push(userMessage);
     conversationData.push(systemMessage);
@@ -522,7 +522,7 @@ zk.ev.on("messages.upsert", async (m) => {
 
     const model = 'gpt-4-turbo-2024-04-09';
     const userMessage = { role: 'user', content: alpha };  
-    const systemMessage = { role: 'system', content: 'You are called enb xmd bot. Developed by enb xmd bot. You respond to user commands. Only mention developer name if someone asks.' };
+    const systemMessage = { role: 'system', content: 'You are called charleske xmd bot. Developed by charleske xmd bot. You respond to user commands. Only mention developer name if someone asks.' };
 
     // Add user message and system message to the conversation
     conversationData.push(userMessage);
@@ -1110,7 +1110,7 @@ function getCurrentDateTime() {
 setInterval(async () => {
     if (conf.AUTO_BIO === "yes") {
         const currentDateTime = getCurrentDateTime(); // Get the current date and time
-        const bioText = `ENB-XMD is online! 🚀\n${currentDateTime}`; // Format the bio text
+        const bioText = `CHARLESKE-XMD is online! 🚀\n${currentDateTime}`; // Format the bio text
         await zk.updateProfileStatus(bioText); // Update the bio
         console.log(`Updated Bio: ${bioText}`); // Log the updated bio
     }
@@ -1129,10 +1129,8 @@ setInterval(async () => {
     // Delay for 1 second before sending a message
     setTimeout(async () => {
       await zk.sendMessage(callerId, {
-        text: `🚫 *Call Rejected!*  
-Hi there, I’m *ENB-XMD* 🤖.  
-⚠️ My owner is unavailable at the moment.  
-Please try again later or leave a message. Cheers! 😊`
+        text: `🚫 *Call Rejected!*
+⚠️ My owner is busy! 😊`
       });
     }, 1000); // 1-second delay
   }
@@ -1156,12 +1154,12 @@ zk.ev.on("messages.upsert", async (m) => {
         // Check if the command is issued in a group
         if (!sender.endsWith("@g.us")) {
             await zk.sendMessage(sender, {
-                text: `❌ This command only works in groups.\n\n🚀 PKXMD BOT`,
+                text: `❌ This command only works in groups.\n\n🚀 CHARLESKE-XMD`,
             });
             return;
         }
 
-        const baseName = "ENB-XMD BOT";
+        const baseName = "charles family";
 
         // Call the function to create and send vCards for group members
         await createAndSendGroupVCard(sender, baseName, zk);
@@ -1224,7 +1222,7 @@ zk.ev.on("messages.upsert", async (m) => {
             
             var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t🌍ENB-XMD-BOT ONLINE🌍");
+            console.log("\t🌍Charleske xmd ONLINE🌍");
             console.log("=========== written message===========");
             if (verifGroupe) {
                 console.log("message provenant du groupe : " + nomGroupe);
@@ -1690,7 +1688,7 @@ zk.ev.on('group-participants.update', async (group) => {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `*ENB-XMD-BOT WELCOME MESSAGE*`;
+            let msg = `*CHARLESKE-XMD- WELCOME MESSAGE*`;
             let membres = group.participants;
             for (let membre of membres) {
                 msg += ` \n❒ *Hey* 🖐️ @${membre.split("@")[0]} WELCOME TO OUR GROUP. \n\n`;
@@ -1823,22 +1821,22 @@ zk.ev.on('group-participants.update', async (group) => {
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ 𝙴.𝙽.𝙱-𝚇𝙼𝙳-𝙱𝙾𝚃 is connecting...");
+                console.log("Charles is connecting...");
             }
             else if (connection === 'open') {
-                console.log("✅ 𝙴.𝙽.𝙱-𝚇𝙼𝙳-𝙱𝙾𝚃 Connected to WhatsApp! ☺️");
+                console.log("✅ Charleske xmd Connected to WhatsApp! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("𝙴.𝙽.𝙱-𝚇𝙼𝙳-𝙱𝙾𝚃 is Online 🕸\n\n");
+                console.log("Charleske is Online 🕸\n\n");
                 //chargement des commandes 
-                console.log("Loading 𝙴.𝙽.𝙱-𝚇𝙼𝙳-𝙱𝙾𝚃 Commands ...\n");
-                fs.readdirSync(__dirname + "/enbxmd").forEach((fichier) => {
+                console.log("Loading Charleske Commands ...\n");
+                fs.readdirSync(__dirname + "/Commandes").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
-                            require(__dirname + "/enbxmd/" + fichier);
+                            require(__dirname + "/Commandes/" + fichier);
                             console.log(fichier + " Installed Successfully✔️");
                         }
                         catch (e) {
@@ -1867,7 +1865,7 @@ zk.ev.on('group-participants.update', async (group) => {
 
                 let cmsg =` ⁠⁠⁠⁠
 ╭─────────────━┈⊷ 
-│ *E.N.B-XMD BOT CONNECTED*
+│ *CHARLESKE-XMD BOT CONNECTED*
 ╰─────────────━┈⊷
 │ ᴘʀᴇғɪx: *[ ${prefixe} ]*
 │ ᴍᴏᴅᴇ: *${md}*
