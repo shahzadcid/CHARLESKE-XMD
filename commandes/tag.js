@@ -1,4 +1,4 @@
-const isAdmin = require('../lib/isAdmin');
+const isAdmin = require('../bdd/zokou');
 const { downloadContentFromMessage } = require('@whiskeysockets/baileys');
 const fs = require('fs');
 const path = require('path');
